@@ -4,7 +4,7 @@ Material relacionado con el curso de React impartido para UCenfotec, Agosto 2024
 ### Requerimientos de software
 * Microsoft Visual Studio Code\
 https://code.visualstudio.com/ \
-Instalar o actualizar a la última versión.\
+Instalar o actualizar a la última versión. \
     * Agregar la extensión **ES7+ React/Redux/React-Native snippets**.
     * Agregar la extensión **ESLint**.
     * Agregar la extensión **Prettier - Code formatter**.
@@ -12,7 +12,7 @@ Instalar o actualizar a la última versión.\
     * Agregar la extensión **ritwickdey.LiveServer**.
 	
 * Node.js\
-https://nodejs.org/en/download/.\
+https://nodejs.org/en/download/. \
 Instalar la última versión LTS (Long Term Support).\
 Se puede comprobar la versión por medio de la línea de comandos con: node --version.
 	
@@ -27,5 +27,5 @@ Se instala ejecutando desde la línea de comandos: npm i json-server@0.17.4 -g\
 Se puede comprobar la versión instalada por medio de la línea de comandos con: json-server --version.
 
 * Postman\
-https://www.postman.com/downloads/\
+https://www.postman.com/downloads/ \
 Utilidad para efecuar pruebas del APIs REST.
