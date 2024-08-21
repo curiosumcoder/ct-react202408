@@ -5,15 +5,15 @@ Material relacionado con el curso de React impartido para UCenfotec, Agosto 2024
 * Microsoft Visual Studio Code\
 https://code.visualstudio.com/ \
 Instalar o actualizar a la última versión. \ 
-    * Agregar la extensión **ES7+ React/Redux/React-Native snippets**.
-    * Agregar la extensión **ESLint**.
-    * Agregar la extensión **Prettier - Code formatter**.
-    * Agregar la extensión **Material Icon Theme**.
-    * Agregar la extensión **ritwickdey.LiveServer**.
+	* Agregar la extensión **ES7+ React/Redux/React-Native snippets**.
+	* Agregar la extensión **ESLint**.
+	* Agregar la extensión **Prettier - Code formatter**.
+	* Agregar la extensión **Material Icon Theme**.
+	* Agregar la extensión **ritwickdey.LiveServer**.
 	
 * Node.js\
 https://nodejs.org/en/download/. \
-Instalar la última versión LTS (Long Term Support).\
+Instalar la última versión LTS (Long Term Support). \
 Se puede comprobar la versión por medio de la línea de comandos con: node --version.
 	
 * NPM actualizado\
