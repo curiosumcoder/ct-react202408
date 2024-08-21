@@ -18,13 +18,13 @@ Se puede comprobar la versión por medio de la línea de comandos con: node --ve
 	
 * NPM actualizado\
 Ese se incluye con parte del Nodejs, pero se necesita la última versión.\
-Se puede comprobar la versión por medio de la línea de comandos con: npm --version.\
-Para actualizarlo se ejecuta desde la línea de comandos y ejecutando como administrador: npm i npm -g.
+Se puede comprobar la versión por medio de la línea de comandos con: **npm --version**.\
+Para actualizarlo se ejecuta desde la línea de comandos y ejecutando como administrador: **npm i npm -g**.
  
 * json-server\
 json-server es un pequeño servidor de REST sobre archivos de datos JSON, útil para pruebas locales. Es una aplicación escrita en nodejs.\
-Se instala ejecutando desde la línea de comandos: npm i json-server@0.17.4 -g\
-Se puede comprobar la versión instalada por medio de la línea de comandos con: json-server --version.
+Se instala ejecutando desde la línea de comandos: **npm i json-server@0.17.4 -g**\
+Se puede comprobar la versión instalada por medio de la línea de comandos con: **json-server --version**.
 
 * Postman\
 https://www.postman.com/downloads/ \
