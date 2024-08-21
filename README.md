@@ -4,7 +4,7 @@ Material relacionado con el curso de React impartido para UCenfotec, Agosto 2024
 ### Requerimientos de software
 * Microsoft Visual Studio Code\
 https://code.visualstudio.com/ \
-Instalar o actualizar a la última versión. \
+Instalar o actualizar a la última versión.\ 
     * Agregar la extensión **ES7+ React/Redux/React-Native snippets**.
     * Agregar la extensión **ESLint**.
     * Agregar la extensión **Prettier - Code formatter**.
