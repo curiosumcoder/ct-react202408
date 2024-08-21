@@ -14,7 +14,7 @@ Instalar o actualizar a la última versión.
 * Node.js\
 https://nodejs.org/en/download/. \
 Instalar la última versión LTS (Long Term Support). \
-Se puede comprobar la versión por medio de la línea de comandos con: node --version.
+Se puede comprobar la versión por medio de la línea de comandos con: **node --version**.
 	
 * NPM actualizado\
 Ese se incluye con parte del Nodejs, pero se necesita la última versión.\
