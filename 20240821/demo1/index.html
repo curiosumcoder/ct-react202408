@@ -1,11 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <script type="module">
+      import products from "./products.js";
+
+      console.log(products.length);
+
+      const p1 = products[0];
+      console.log(p1);
+
+      const nombre = p1.productName;
+      console.log(nombre);
+
+      // Destructuración
+      // let {productName, unitPrice} = p1
+      let { productName: pName, unitPrice } = p1;
+      console.log(pName, unitPrice);
+
+      let [x, y] = [123, 456, 789];
+      console.log(x, y);
+
+      // Templated literals (string interpolation)
+      const pString = `${pName} - ${unitPrice}`;
+      console.log(pString);
+
+      // Rest/Spread ...
+      let [a, b, ...c] = products;
+      console.log(c.length);
+      console.log(c);
+      console.log(...c);
+
+      console.clear();
+      for (const p of products) {
+        console.log(p.productName)
+      }
+
+      products.forEach(function (p) {
+        console.log(p.productName)
+      })
+
+      console.clear()
+      // Arrow functions = >
+      products.forEach(p => console.log(p.productName))
+
+      console.clear()
+      // DOM API
+      const ul = document.querySelector('#result')
+    //   if (ul) {
+    //     products.forEach(p => {
+    //       const li = document.createElement('li')
+    //       li.textContent = p.productName
+    //       ul.appendChild(li)
+    //     })
+    //   }
+
+      // Promises API, async/await
+      const res = await fetch('https://swapi.dev/api/people/?search=lu')
+      const data = await res.json();
+      data.results.forEach(p => {
+        const li = document.createElement('li')
+        li.textContent = p.name
+        ul.appendChild(li)
+      })
+    </script>
+
+    <ul id="result"></ul>
+  </body>
 </html>
