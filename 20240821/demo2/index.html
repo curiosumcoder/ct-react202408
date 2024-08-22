@@ -1,11 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+
+    <script
+      src="https://unpkg.com/react@18.2.0/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+  </head>
+  <body>
+    <script>
+      // IIFE
+      (async () => {
+        // const ul = React.createElement('ul', null, [
+        //     React.createElement('li', null, 'Luke Skywalker'),
+        //     React.createElement('li', null, 'C-3PO'),
+        //     React.createElement('li', null, 'R2-D2'),
+        //     React.createElement('li', null, 'Darth Vader'),
+        //     React.createElement('li', null, 'Leia Organa'),
+        //     React.createElement('li', null, 'Owen Lars'),
+        //     React.createElement('li', null, 'Beru Whitesun lars'),
+        //     React.createElement('li', null, 'R5-D4'),
+        //     React.createElement('li', null, 'Biggs Darklighter'),
+        //     React.createElement('li', null, 'Obi-Wan Kenobi')
+        // ]);
+
+        const res = await fetch("https://swapi.dev/api/people/?search=r");
+        const data = await res.json();
+        // data.results.forEach(p => {
+        //     console.log(p.name)
+        // })
+
+        const pStrings = data.results.map((p) => p.name);
+        console.log(data.results);
+        console.log(pStrings);
+
+        /////
+        const ul = React.createElement(
+          "ul",
+          null,
+          data.results.map((p) => React.createElement("li", {key: p.name}, p.name))
+        );
+
+        const root = ReactDOM.createRoot(document.querySelector('#result'));
+        root.render(ul);
+      })();
+    </script>
+    <div id="result"></div>
+  </body>
 </html>
