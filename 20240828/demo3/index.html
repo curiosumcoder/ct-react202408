@@ -20,6 +20,22 @@
     />
   </head>
   <body>
-    
+    <div id="app" class="container"></div>
+
+    <script type="module">
+        import products from './productData.js';
+        import { createProduct } from './productUI.js';
+
+        const productElements = []
+
+        products.forEach(product => {
+            productElements.push(createProduct(product));
+        });
+
+        const ul = React.createElement('ul', { id: 'results', class: 'list-group' }, productElements);
+        const root = ReactDOM.createRoot(document.getElementById('app'));
+        root.render(ul); 
+
+    </script>
   </body>
 </html>
