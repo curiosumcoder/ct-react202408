@@ -1,0 +1,1 @@
+* npm create vite@latest demo6 -- --template react-ts
