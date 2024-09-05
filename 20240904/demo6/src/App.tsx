@@ -2,9 +2,11 @@ import { useState } from "react";
 import IProduct from "./model/IProduct";
 import ProductSearch from "./ProductSearch";
 import ProductList from "./ProductList";
+import ProductDetail from "./ProductDetail";
 
 function App() {
   const [resultado, setResultado] = useState(Array<IProduct>());
+  const [seleccionado, setSeleccionado] = useState<IProduct | null>(null);
   return (
     <>
       <nav className="navbar bg-light">
@@ -20,13 +22,13 @@ function App() {
 
         <div className="row">
           <div className="col-8">
-            <ProductList products={resultado}></ProductList>
+            <ProductList products={resultado} onSelect={ data => setSeleccionado(data)}></ProductList>
           </div>
           <div className="col-4">
-            <ProductDetail></ProductDetail>
+            <ProductDetail p={seleccionado} ></ProductDetail>
           </div>
         </div>
-
+        
       </div>
     </>
   );
