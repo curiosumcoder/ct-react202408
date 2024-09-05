@@ -1,6 +1,10 @@
+import { useState } from "react";
+import IProduct from "./model/IProduct";
 import ProductSearch from "./ProductSearch";
+import ProductList from "./ProductList";
 
 function App() {
+  const [resultado, setResultado] = useState(Array<IProduct>());
   return (
     <>
       <nav className="navbar bg-light">
@@ -11,7 +15,18 @@ function App() {
         </div>
       </nav>
       <div className="container" style={{ marginTop: "1em" }}>
-        <ProductSearch></ProductSearch>
+        <p>{resultado.length}</p>
+        <ProductSearch onResults={ data => setResultado(data) } ></ProductSearch>
+
+        <div className="row">
+          <div className="col-8">
+            <ProductList products={resultado}></ProductList>
+          </div>
+          <div className="col-4">
+            <ProductDetail></ProductDetail>
+          </div>
+        </div>
+
       </div>
     </>
   );
