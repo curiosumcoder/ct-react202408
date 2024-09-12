@@ -1091,6 +1091,26 @@
       "productName": "Piña Morada",
       "unitPrice": "1",
       "id": 95
+    },
+    {
+      "productName": "Sandía Amarilla",
+      "unitPrice": "112233",
+      "id": 96
+    },
+    {
+      "productName": "Sandía Amarilla",
+      "unitPrice": "12",
+      "id": 97
+    },
+    {
+      "productName": "Bananos Criollos",
+      "unitPrice": "50",
+      "id": 98
+    },
+    {
+      "productName": "Platanos Verdes",
+      "unitPrice": "300",
+      "id": 99
     }
   ],
   "customers": [
