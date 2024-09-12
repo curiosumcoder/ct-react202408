@@ -1076,6 +1076,21 @@
       "unitsOnOrder": 0,
       "reorderLevel": 0,
       "discontinued": false
+    },
+    {
+      "productName": "Piña Rosada",
+      "unitPrice": "2500",
+      "id": 93
+    },
+    {
+      "productName": "Piña Morada",
+      "unitPrice": "1",
+      "id": 94
+    },
+    {
+      "productName": "Piña Morada",
+      "unitPrice": "1",
+      "id": 95
     }
   ],
   "customers": [
